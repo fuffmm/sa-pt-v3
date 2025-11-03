@@ -1,0 +1,94 @@
+:root:has(#default:checked) {
+  --text: hsl(174, 38%, 95%);
+  --text-muted: hsl(231, 9%, 37%);
+  --text-active: var(--outline-active);
+  --text-info: hsl(190, 5%, 65%);
+
+  --background-a0: hsl(229, 12%, 19%);
+
+  --outline: hsl(231, 8%, 41%);
+  --outline-active: hsl(112, 92%, 90%);
+
+  --card-off: hsl(229, 11%, 25%);
+  --card-on: hsl(152, 29%, 57%);
+
+  --slider-thumb: hsl(134, 44%, 75%);
+  --percent-color: var(--slider-thumb);
+  --button-color: var(--text-muted);
+}
+
+:root:has(#teddy:checked) {
+  --text: hsl(350, 46%, 68%);
+  --text-muted: hsl(24, 13%, 29%);
+  --text-active: var(--outline-active);
+  --text-info: hsl(350, 46%, 88%);
+
+  --background-a0: hsl(22, 11%, 15%);
+
+  --outline: hsl(27, 21%, 33%);
+  --outline-active: hsl(351, 51%, 84%);
+
+  --card-off: hsl(24, 14%, 21%);
+  --card-on: hsl(350, 46%, 68%);
+
+  --slider-thumb: var(--outline-active);
+  --percent-color: var(--slider-thumb);
+  --button-color: var(--text-muted);
+}
+
+:root:has(#synthwave:checked) {
+  --text: hsl(318, 100%, 75%);
+  --text-muted: hsl(262, 26%, 30%);
+  --text-active: var(--outline-active);
+  --text-info: var(--outline-active);
+
+  --background-a0: hsl(246, 33%, 12%);
+
+  --outline: hsl(260, 29%, 42%);
+  --outline-active: hsl(154, 100%, 74%);
+
+  --card-off: hsl(262, 27%, 18%);
+  --card-on: hsl(154, 36%, 46%);
+
+  --slider-thumb: var(--outline-active);
+  --percent-color: var(--slider-thumb);
+  --button-color: var(--text-muted);
+}
+
+:root:has(#steam_old:checked) {
+  --text: hsl(0, 0%, 100%);
+  --text-muted: hsl(85, 9%, 50%);
+  --text-active: var(--outline-active);
+  --text-info: hsl(92, 8%, 63%);
+
+  --background-a0: hsl(96, 13%, 31%);
+
+  --outline: hsl(88, 21%, 18%);
+  --outline-active: hsl(55, 38%, 69%);
+
+  --card-off: hsl(92, 12%, 25%);
+  --card-on: hsl(55, 22%, 49%);
+
+  --slider-thumb: var(--outline-active);
+  --percent-color: var(--slider-thumb);
+  --button-color: var(--background-a0);
+}
+
+:root:has(#neutral:checked) {
+  --text: hsl(0, 0%, 96%);
+  --text-muted: hsl(0, 0%, 25%);
+  --text-active: var(--outline-active);
+  --text-info: hsl(0, 0%, 64%);
+
+  --background-a0: hsl(0, 0%, 6%);
+
+  --outline: hsl(0, 0%, 18%);
+  --outline-active: hsl(0, 0%, 45%);
+
+  --card-off: hsl(0, 0%, 9%);
+  --card-on: hsl(0, 0%, 25%);
+
+  --slider-thumb: var(--outline-active);
+  --percent-color: var(--slider-thumb);
+  --button-color: var(--text-muted);
+}

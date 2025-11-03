@@ -1,0 +1,3702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SA:PT v3 | Track your 100% completion</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticrun.app/538ec258-a17c-435f-8205-f8068865b273/c9987e46-0e4e-4c53-b7f3-e7701de6772d/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticrun.app/538ec258-a17c-435f-8205-f8068865b273/c9987e46-0e4e-4c53-b7f3-e7701de6772d/themes.css" />
+    <link rel="shortcut icon" href="https://cdn.staticrun.app/538ec258-a17c-435f-8205-f8068865b273/c9987e46-0e4e-4c53-b7f3-e7701de6772d/favicon.png" />
+    <script src="https://cdn.staticrun.app/538ec258-a17c-435f-8205-f8068865b273/c9987e46-0e4e-4c53-b7f3-e7701de6772d/main.js" defer></script>
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FontAwesome -->
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Font -->
+  </head>
+
+  <body>
+    <div class="site-view">
+      <div class="quick-menu">
+        <h1>OULYS MOD MENU</h1>
+        <label class="themes-wrapper">
+          <input
+            type="radio"
+            name="theme"
+            value="default"
+            id="default"
+            checked
+          />
+          Default
+        </label>
+        <label class="themes-wrapper">
+          <input type="radio" name="theme" value="teddy" id="teddy" />
+          Teddy
+        </label>
+        <label class="themes-wrapper">
+          <input type="radio" name="theme" value="synthwave" id="synthwave" />
+          Synthwave '84
+        </label>
+        <label class="themes-wrapper">
+          <input type="radio" name="theme" value="steam_old" id="steam_old" />
+          Old Steam
+        </label>
+        <label class="themes-wrapper">
+          <input type="radio" name="theme" value="neutral" id="neutral" />
+          Graphite
+        </label>
+      </div>
+      <div class="header-wrapper">
+        <div class="header-logo">
+          <h1><a href="#top">SA:PT</a></h1>
+        </div>
+        <h1 class="header-percent">
+          <span id="completionPercent" class="percentColor">0.00%</span>
+          Completion!
+        </h1>
+      </div>
+      <div class="sidebar-wrapper">
+        <div class="sidebar-items">
+          <ul>
+            <ul>
+              <h2>Los Santos</h2>
+              <li>
+                <a href="#Section_Introduction">Introduction</a>
+              </li>
+              <li><a href="#Section_LS_Sweet_1">Sweet</a></li>
+              <li><a href="#Section_LS_Big_Smoke">Big Smoke</a></li>
+              <li><a href="#Section_LS_Ryder">Ryder</a></li>
+              <li><a href="#Section_LS_Cesar_Vialpando">Cesar Vialpando</a></li>
+              <li><a href="#Section_LS_OG_Loc">OG Loc</a></li>
+              <li><a href="#Section_LS_Frank_Tenpenny">Frank Tenpenny</a></li>
+              <li><a href="#Section_LS_Sweet_2">Sweet</a></li>
+            </ul>
+            <ul>
+              <h2>Badlands</h2>
+              <li><a href="#Section_BL_Frank_Tenpenny">Frank Tenpenny</a></li>
+              <li><a href="#Section_BL_The_Truth_1">The Truth</a></li>
+              <li>
+                <a href="#Section_BL_Cesar_Vialpando_1">Cesar Vialpando</a>
+              </li>
+              <li><a href="#Section_BL_Catalina">Catalina</a></li>
+              <li>
+                <a href="#Section_BL_Cesar_Vialpando_2">Cesar Vialpando</a>
+              </li>
+              <li><a href="#Section_BL_The_Truth_2">The Truth</a></li>
+            </ul>
+            <ul>
+              <h2>San Fierro</h2>
+              <li><a href="#Section_SF_Carl_Johnson">Carl Johnson</a></li>
+              <li><a href="#Section_SF_Zero">Zero</a></li>
+              <li><a href="#Section_SF_Loco_Syndicate_1">Loco Syndicate</a></li>
+              <li><a href="#Section_SF_Wu_Zi_Mu">Wu Zi Mu</a></li>
+              <li><a href="#Section_SF_Edward_Pulaski">Edward Pulaski</a></li>
+              <li><a href="#Section_SF_Loco_Syndicate_2">Loco Syndicate</a></li>
+              <li><a href="#Section_SF_Wang_Cars">Wang Cars</a></li>
+            </ul>
+            <ul>
+              <h2>Desert</h2>
+              <li>
+                <a href="#Section_DT_Anonymous_Identifier"
+                  >Anonymous Identifier</a
+                >
+              </li>
+              <li><a href="#Section_DT_Mike_Toreno">Mike Toreno</a></li>
+              <li>
+                <a href="#Section_DT_Verdant_Meadows_Airstrip"
+                  >Verdant Meadows Airstrip</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <h2>Las Venturas</h2>
+              <li>
+                <a href="#Section_LV_The_Four_Dragons_Casino_1"
+                  >The Four Dragons Casino</a
+                >
+              </li>
+              <li><a href="#Section_LV_Heist_1">Heist</a></li>
+              <li>
+                <a href="#Section_LV_Caligulas_Casino_1">Caligula's Casino</a>
+              </li>
+              <li><a href="#Section_LV_Frank_Tenpenny_1">Frank Tenpenny</a></li>
+              <li>
+                <a href="#Section_LV_The_Four_Dragons_Casino_2"
+                  >The Four Dragons Casino</a
+                >
+              </li>
+              <li><a href="#Section_LV_Madd_Dogg">Madd Dogg</a></li>
+              <li>
+                <a href="#Section_LV_Caligulas_Casino_2">Caligula's Casino</a>
+              </li>
+              <li><a href="#Section_LV_Frank_Tenpenny_2">Frank Tenpenny</a></li>
+              <li>
+                <a href="#Section_LV_Caligulas_Casino_3">Caligula's Casino</a>
+              </li>
+              <li><a href="#Section_LV_Heist_2">Heist</a></li>
+              <li>
+                <a href="#Section_LV_The_Four_Dragons_Casino_3"
+                  >The Four Dragons Casino</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <h2>Los Santos (Finale)</h2>
+              <li><a href="#Section_LS_End_Carl_Johnson">Carl Johnson</a></li>
+              <li><a href="#Section_LS_End_Sweet">Sweet</a></li>
+              <li><a href="#Section_LS_End_Finale">Finale</a></li>
+            </ul>
+            <ul>
+              <h2>Asset Missions</h2>
+              <li><a href="#Section_Trucking">Trucking</a></li>
+              <li><a href="#Section_Robois_Food_Mart">Roboi's Food Mart</a></li>
+              <li><a href="#Section_Hippy_Shopper">Hippy Shopper</a></li>
+              <li><a href="#Section_Burger_Shot">Burger Shot</a></li>
+              <li><a href="#Section_Valet_Parking">Valet Parking</a></li>
+              <li><a href="#Section_Hunter_Quarry">Hunter Quarry</a></li>
+            </ul>
+            <ul>
+              <h2>Odd Jobs</h2>
+              <li><a href="#Section_Vigilante">Vigilante</a></li>
+              <li><a href="#Section_Paramedic">Paramedic</a></li>
+              <li><a href="#Section_Firefighter">Firefighter</a></li>
+              <li><a href="#Section_Taxi_Driver">Taxi Driver</a></li>
+              <li><a href="#Section_Pimping">Pimping</a></li>
+              <li><a href="#Section_Freight_Train">Freight Train</a></li>
+            </ul>
+            <ul>
+              <h2>Vehicle Schools</h2>
+              <li><a href="#Section_Driving_School">Driving School</a></li>
+              <li><a href="#Section_Flight_School">Flight School</a></li>
+              <li><a href="#Section_Bike_School">Bike School</a></li>
+              <li><a href="#Section_Boat_School">Boat School</a></li>
+            </ul>
+            <ul>
+              <h2>Stadium Events</h2>
+              <li><a href="#Section_8Track">8-Track</a></li>
+              <li><a href="#Section_Kickstart">Kickstart</a></li>
+              <li><a href="#Section_Blood_Bowl">Blood Bowl</a></li>
+              <li><a href="#Section_Dirt_Track">Dirt Track</a></li>
+            </ul>
+            <ul>
+              <h2>Street Races</h2>
+              <li><a href="#Section_Race_Los_Santos">Los Santos</a></li>
+              <li><a href="#Section_Race_San_Fierro">San Fierro</a></li>
+              <li>
+                <a href="#Section_Race_LVA_Freight_Depot">LVA Freight Depot</a>
+              </li>
+              <li>
+                <a href="#Section_Race_Las_Venturas_Airport"
+                  >Las Venturas Airport</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <h2>Hidden Challenges</h2>
+              <li>
+                <a href="#Section_Chiliad_Challenge">Chiliad Challenge</a>
+              </li>
+              <li><a href="#Section_BMX_Challenge">BMX Challenge</a></li>
+              <li><a href="#Section_NRG500_Challenge">NRG-500 Challenge</a></li>
+            </ul>
+            <ul>
+              <h2>Import / Export</h2>
+              <li><a href="#Section_List_1">List #1</a></li>
+              <li><a href="#Section_List_2">List #2</a></li>
+              <li><a href="#Section_List_3">List #3</a></li>
+            </ul>
+            <ul>
+              <h2>Shooting Range</h2>
+              <li><a href="#Section_Shooting_Range">Ammu-Nation</a></li>
+            </ul>
+            <ul>
+              <h2>Gym Moves</h2>
+              <li><a href="#Section_Gym_Los_Santos">Los Santos</a></li>
+              <li><a href="#Section_Gym_San_Fierro">San Fierro</a></li>
+              <li><a href="#Section_Gym_Las_Venturas">Las Venturas</a></li>
+            </ul>
+            <ul>
+              <h2>Collectables</h2>
+              <li><a href="#Section_Collectables_Oysters">Oysters</a></li>
+              <li><a href="#Section_Collectables_Gang_Tags">Gang Tags</a></li>
+              <li><a href="#Section_Collectables_Snapshots">Snapshots</a></li>
+              <li>
+                <a href="#Section_Collectables_Horeseshoes">Horseshoes</a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+      <div class="main-wrapper">
+        <div class="main-section">
+          <h1>Los Santos</h1>
+          <div class="cards-wrapper">
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="false"
+              id="Section_Introduction"
+            >
+              <h2 class="mission-title">In the beginning...</h2>
+              <p class="mission-info">
+                Climb on the provided bicycle, and using the bicycle, or a motor
+                vehicle because the bicycle is voluntary to use, head back to
+                Grove Street and enter The Johnson House.
+              </p>
+              <h2 class="mission-who">Introduction</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="false"
+            >
+              <h2 class="mission-title">Big Smoke</h2>
+              <p class="mission-info">
+                Meet your childhood friend and high-ranking Grove Street
+                Families member Melvin "Big Smoke" Harris for the first time in
+                five years.
+              </p>
+              <h2 class="mission-who">Introduction</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Sweet & Kendl</h2>
+              <p class="mission-info">
+                Escape the Ballas with Sweet, Smoke and Ryder and head back to
+                Ganton.
+              </p>
+              <h2 class="mission-who">Introduction</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Ryder</h2>
+              <p class="mission-info">
+                Get a haircut at Reece's Hair & Facial Studio and some food from
+                The Well Stacked Pizza Co. and drive with Ryder back home.
+              </p>
+              <h2 class="mission-who">Introduction</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LS_Sweet_1"
+            >
+              <h2 class="mission-title">Tagging Up Turf</h2>
+              <p class="mission-info">
+                Spray the Grove Street Families tag over the enemy gang tags.
+              </p>
+              <h2 class="mission-who">Sweet</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Cleaning the Hood</h2>
+              <p class="mission-info">
+                Clear off all street crack dealers in Ganton by attacking a
+                dealer and later invading a crack den nearby in Crystal Gardens,
+                Idlewood.
+              </p>
+              <h2 class="mission-who">Sweet</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Drive-Thru</h2>
+              <p class="mission-info">
+                Drive to the nearby Cluckin' Bell in Willowfield. Prevent the
+                Ballas from reaching Grove Street.
+              </p>
+              <h2 class="mission-who">Sweet</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Nines and AKs</h2>
+              <p class="mission-info">
+                Collect some pistols and weapon-training from Emmet.
+              </p>
+              <h2 class="mission-who">Sweet</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Drive-By</h2>
+              <p class="mission-info">
+                Perform drive-by shootings on the Ballas and escape the heat
+                afterwards.
+              </p>
+              <h2 class="mission-who">Sweet</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Sweet's Girl</h2>
+              <p class="mission-info">
+                Rescue Sweet from the Seville Boulevard Families.
+              </p>
+              <h2 class="mission-who">Sweet</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Cesar Vialpando</h2>
+              <p class="mission-info">Win the Lowrider Challenge.</p>
+              <h2 class="mission-who">Sweet</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LS_Big_Smoke"
+            >
+              <h2 class="mission-title">OG Loc</h2>
+              <p class="mission-info">
+                Pick up Loc from the Los Santos Police Department headquarters
+                at Pershing Square. Kill Freddy and drive Loc to the employees'
+                door at the back of the Burger Shot.
+              </p>
+              <h2 class="mission-who">Big Smoke</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Running Dog</h2>
+              <p class="mission-info">
+                Chase and kill the escaping Los Santos Vagos gang member.
+              </p>
+              <h2 class="mission-who">Big Smoke</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Wrong Side of the Tracks</h2>
+              <p class="mission-info">
+                Kill four Vagos gang members on a train before they escape.
+              </p>
+              <h2 class="mission-who">Big Smoke</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Just Business</h2>
+              <p class="mission-info">
+                Escape and kill the attacking Russian Mafia.
+              </p>
+              <h2 class="mission-who">Big Smoke</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LS_Ryder"
+            >
+              <h2 class="mission-title">Home Invasion</h2>
+              <p class="mission-info">
+                Burglarize Colonel Fuhrberger's house for weapons and take the
+                truck to the lockup in Willowfield.
+              </p>
+              <h2 class="mission-who">Ryder</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Catalyst</h2>
+              <p class="mission-info">
+                Intercept the army munitions train and throw the crates to
+                Ryder. Lose the heat and drive back to Ryder's house.
+              </p>
+              <h2 class="mission-who">Ryder</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Robbing Uncle Sam</h2>
+              <p class="mission-info">
+                Raid the National Guard Depot for weapon crates using a
+                forklift. Outrun the Guardsmen pursuing in Patriots and drive to
+                Emmet's place in Willowfield.
+              </p>
+              <h2 class="mission-who">Ryder</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LS_Cesar_Vialpando"
+            >
+              <h2 class="mission-title">High Stakes, Low Rider</h2>
+              <p class="mission-info">Win the lowrider race.</p>
+              <h2 class="mission-who">Cesar Vialpando</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LS_OG_Loc"
+            >
+              <h2 class="mission-title">Life's a Beach</h2>
+              <p class="mission-info">
+                Steal a sound system in a Pony from Santa Maria Beach.
+              </p>
+              <h2 class="mission-who">OG Loc</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Madd Dogg's Rhymes</h2>
+              <p class="mission-info">
+                Break into Madd Dogg's mansion and steal his rhyme book using a
+                knife, stealth, and silenced pistol.
+              </p>
+              <h2 class="mission-who">OG Loc</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Management Issues</h2>
+              <p class="mission-info">
+                Steal a car from one of Scipio's drivers, pick him and his
+                escort up from an award function at the Cathay Theatre, and kill
+                them by driving them into the ocean.
+              </p>
+              <h2 class="mission-who">OG Loc</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">House Party</h2>
+              <p class="mission-info">
+                Defend Grove Street from an invading assault force of Ballas.
+              </p>
+              <h2 class="mission-who">OG Loc</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LS_Frank_Tenpenny"
+            >
+              <h2 class="mission-title">Burning Desire</h2>
+              <p class="mission-info">
+                Burn the Vago member's gang house and rescue the girl from the
+                burning building and drive her to safety.
+              </p>
+              <h2 class="mission-who">Frank Tenpenny</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Gray Imports</h2>
+              <p class="mission-info">
+                Raid the warehouse in Ocean Docks where the Ballas and the
+                Russians are making a deal.
+              </p>
+              <h2 class="mission-who">Frank Tenpenny</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LS_Sweet_2"
+            >
+              <h2 class="mission-title">Doberman</h2>
+              <p class="mission-info">
+                Take over Glen Park and kill Little Weasel.
+              </p>
+              <h2 class="mission-who">Sweet</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Los Sepulcros</h2>
+              <p class="mission-info">
+                Ambush Kane while he is attending Little Weasel's funeral with
+                other Ballas. Escape with Sweet back home.
+              </p>
+              <h2 class="mission-who">Sweet</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Reuniting the Families</h2>
+              <p class="mission-info">
+                Go to the Jefferson Motel. Rescue Sweet from the S.W.A.T. team
+                raid, and flee with Smoke and Ryder using an AK-47 while
+                shooting the police in pursuit.
+              </p>
+              <h2 class="mission-who">Sweet</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">The Green Sabre</h2>
+              <p class="mission-info">
+                Go to the underpass where Cesar awaits to show you the despised
+                Green Sabre responsible for your mother's death. Rescue Sweet at
+                the Mulholland Intersection and hold off the Ballas until the
+                police arrive.
+              </p>
+              <h2 class="mission-who">Sweet</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-section">
+          <h1>Badlands</h1>
+          <div class="cards-wrapper">
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_BL_Frank_Tenpenny"
+            >
+              <h2 class="mission-title">Badlands</h2>
+              <p class="mission-info">
+                Kill a witness for Frank Tenpenny and bring back proof of his
+                death.
+              </p>
+              <h2 class="mission-who">Frank Tenpenny</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_BL_The_Truth_1"
+            >
+              <h2 class="mission-title">Body Harvest</h2>
+              <p class="mission-info">
+                Steal a combine harvester from The Farm. Take it to The Truth's
+                farm.
+              </p>
+              <h2 class="mission-who">The Truth</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="false"
+              id="Section_BL_Cesar_Vialpando_1"
+            >
+              <h2 class="mission-title">King in Exile</h2>
+              <p class="mission-info">
+                Meet Cesar and Kendl at Angel Pine to learn about the problems
+                in Los Santos and convince the duo to keep mum until there's
+                some intelligence input on the drug trade.
+              </p>
+              <h2 class="mission-who">Cesar Vialpando</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_BL_Catalina"
+            >
+              <h2 class="mission-title">Tanker Commander</h2>
+              <p class="mission-info">
+                Hijack a Tanker and connect it to the tanker-trailer. Take the
+                tanker truck to Mr. Whittaker at his RS Haul depot in Flint
+                Range without detaching the trailer or losing health from the
+                tanker.
+              </p>
+              <h2 class="mission-who">Catalina</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Against All Odds</h2>
+              <p class="mission-info">
+                Rob the Inside Track betting shop in Montgomery.
+              </p>
+              <h2 class="mission-who">Catalina</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Local Liquor Store</h2>
+              <p class="mission-info">
+                Chase the three yokels to retrieve the loot from the Blueberry
+                Liquor Store robbery.
+              </p>
+              <h2 class="mission-who">Catalina</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Small Town Bank</h2>
+              <p class="mission-info">
+                Rob the Palomino Creek Bank and escape with Catalina back to the
+                hideout.
+              </p>
+              <h2 class="mission-who">Catalina</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_BL_Cesar_Vialpando_2"
+            >
+              <h2 class="mission-title">Wu Zi Mu</h2>
+              <p class="mission-info">
+                Beat Wu Zi Mu in a race around Red County.
+              </p>
+              <h2 class="mission-who">Cesar Vialpando</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Farewell, My Love...</h2>
+              <p class="mission-info">Beat Catalina and Claude in a race.</p>
+              <h2 class="mission-who">Cesar Vialpando</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_BL_The_Truth_2"
+            >
+              <h2 class="mission-title">Are You Going to San Fierro?</h2>
+              <p class="mission-info">
+                Burn The Truth's crops and smoke out the chopper. Head to the
+                garage Carl won in San Fierro, via The Mothership.
+              </p>
+              <h2 class="mission-who">The Truth</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-section">
+          <h1>San Fierro</h1>
+          <div class="cards-wrapper">
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_SF_Carl_Johnson"
+            >
+              <h2 class="mission-title">Wear Flowers in Your Hair</h2>
+              <p class="mission-info">
+                Recruit The Truth's friends, Jethro, Dwayne and Zero to help for
+                the garage.
+              </p>
+              <h2 class="mission-who">Carl Johnson</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">555 We Tip</h2>
+              <p class="mission-info">
+                Go to Vank Hoff Hotel and set up the D.A. by planting weed in
+                his car's trunk.
+              </p>
+              <h2 class="mission-who">Carl Johnson</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Deconstruction</h2>
+              <p class="mission-info">
+                Destroy the portables on construction site behind your garage
+                with Bulldozer and bury the foreman in cement for calling Kendl
+                a hooker.
+              </p>
+              <h2 class="mission-who">Carl Johnson</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_SF_Zero"
+            >
+              <h2 class="mission-title">Air Raid</h2>
+              <p class="mission-info">
+                Defend Zero's transmitters from RC Barons using the zing of a
+                minigun.
+              </p>
+              <h2 class="mission-who">Zero</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Supply Lines...</h2>
+              <p class="mission-info">
+                Use RC Baron to kill all five of Berkley's couriers and land
+                back on Zero's roof.
+              </p>
+              <h2 class="mission-who">Zero</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">New Model Army</h2>
+              <p class="mission-info">
+                Control the RC Goblin and help Zero's RC Bandit defeat Berkley
+                in RC BattleGround.
+              </p>
+              <h2 class="mission-who">Zero</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_SF_Loco_Syndicate_1"
+            >
+              <h2 class="mission-title">Photo Opportunity</h2>
+              <p class="mission-info">
+                Go meet Cesar at The Panopticon. Go to Angel Pine and photograph
+                the dealers and buyers involved in the Los Santos drug trade.
+              </p>
+              <h2 class="mission-who">Loco Syndicate</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Jizzy</h2>
+              <p class="mission-info">
+                Meet Cesar and Woozie at the garage to identify the members of
+                the Loco Syndicate, and proceed to meet syndicate concierge
+                Jizzy B., the biggest pimp in town.
+              </p>
+              <h2 class="mission-who">Loco Syndicate</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">T-Bone Mendez</h2>
+              <p class="mission-info">
+                Retrieve the stolen drug packages from three to four FCR-900
+                riders.
+              </p>
+              <h2 class="mission-who">Loco Syndicate</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Mike Toreno</h2>
+              <p class="mission-info">
+                Locate and rescue Mike Toreno. Escort Mendez and Toreno back to
+                The Pleasure Domes Club while escaping police attention.
+              </p>
+              <h2 class="mission-who">Loco Syndicate</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Outrider</h2>
+              <p class="mission-info">
+                Clear the roadblocks for the yay shipment van.
+              </p>
+              <h2 class="mission-who">Loco Syndicate</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_SF_Wu_Zi_Mu"
+            >
+              <h2 class="mission-title">Mountain Cloud Boys</h2>
+              <p class="mission-info">
+                Take Woozie to the meeting Defend Woozie from the attacking Da
+                Nang Boys.
+              </p>
+              <h2 class="mission-who">Wu Zi Mu</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Ran Fa Li</h2>
+              <p class="mission-info">
+                Retrieve the car for Farlie from the airport and return to the
+                warehouse.
+              </p>
+              <h2 class="mission-who">Wu Zi Mu</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Lure</h2>
+              <p class="mission-info">
+                Use the decoy Rancher to lure the Da Nang Boys out to Angel Pine
+                and give them a chase.
+              </p>
+              <h2 class="mission-who">Wu Zi Mu</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Amphibious Assault</h2>
+              <p class="mission-info">
+                Swim to the freighter ship and plant a bug.
+              </p>
+              <h2 class="mission-who">Wu Zi Mu</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">The Da Nang Thang</h2>
+              <p class="mission-info">
+                Rescue the refugees aboard the ship and kill The Snakehead.
+              </p>
+              <h2 class="mission-who">Wu Zi Mu</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_SF_Edward_Pulaski"
+            >
+              <h2 class="mission-title">Snail Trail</h2>
+              <p class="mission-info">
+                Follow the reporter to Los Santos without spooking him, and
+                assassinate both the reporter and the target informer on the
+                Santa Maria Pier at Yacht Harbor.
+              </p>
+              <h2 class="mission-who">Edward Pulaski</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_SF_Loco_Syndicate_2"
+            >
+              <h2 class="mission-title">Ice Cold Killa</h2>
+              <p class="mission-info">
+                Visit the Pleasure Domes Club to finish off Jizzy.
+              </p>
+              <h2 class="mission-who">Loco Syndicate</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Pier 69</h2>
+              <p class="mission-info">
+                Kill all the Rifa guards using the sniper rifle, attack the rest
+                and the Ballas on foot and assassinate Mendez and former friend
+                Ryder.
+              </p>
+              <h2 class="mission-who">Loco Syndicate</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Toreno's Last Flight</h2>
+              <p class="mission-info">
+                Destroy the chopper containing Toreno to kill him.
+              </p>
+              <h2 class="mission-who">Loco Syndicate</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Yay Ka-Boom-Boom</h2>
+              <p class="mission-info">
+                Get the wired car from a bomb-shop in Downtown San Fierro.
+                Detonate the car inside the yay factory in Doherty and escape
+                back to the garage.
+              </p>
+              <h2 class="mission-who">Loco Syndicate</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="false"
+              id="Section_SF_Wang_Cars"
+            >
+              <h2 class="mission-title">Back to School</h2>
+              <p class="mission-info">Complete the Driving School</p>
+              <h2 class="mission-who">Wang Cars</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Zeroing In</h2>
+              <p class="mission-info">
+                Follow and steal the Uranus through the P.I.T. maneuver lesson
+                learnt in the Driving School
+              </p>
+              <h2 class="mission-who">Wang Cars</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Test Drive</h2>
+              <p class="mission-info">
+                Destroy the chopper containing Toreno to kill him.
+              </p>
+              <h2 class="mission-who">Wang Cars</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Customs Fast Track</h2>
+              <p class="mission-info">
+                Retrieve the target car from the container ship in the Easter
+                Basin docks using a crane.
+              </p>
+              <h2 class="mission-who">Wang Cars</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Puncture Wounds</h2>
+              <p class="mission-info">
+                Burst the tires of the target car using 3 stingers modded in a
+                Tampa.
+              </p>
+              <h2 class="mission-who">Wang Cars</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-section">
+          <h1>Desert</h1>
+          <div class="cards-wrapper">
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_DT_Anonymous_Identifier"
+            >
+              <h2 class="mission-title">Monster</h2>
+              <p class="mission-info">
+                Use a monster truck to get through the checkpoints around Tierra
+                Robada before 6:30.
+              </p>
+              <h2 class="mission-who">Anonymous Identifier</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Highjack</h2>
+              <p class="mission-info">
+                Jack a Tanker truck on the highway with Cesar.
+              </p>
+              <h2 class="mission-who">Anonymous Identifier</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_DT_Mike_Toreno"
+            >
+              <h2 class="mission-title">Interdiction</h2>
+              <p class="mission-info">
+                Protect Toreno's allied helicopter from enemy choppers in Arco
+                del Oeste, retrieve the package, then deliver it to Las Brujas.
+              </p>
+              <h2 class="mission-who">Mike Toreno</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Verdant Meadows</h2>
+              <p class="mission-info">
+                Buy the Verdant Meadows Airstrip for $80,000.
+              </p>
+              <h2 class="mission-who">Mike Toreno</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="false"
+              id="Section_DT_Verdant_Meadows_Airstrip"
+            >
+              <h2 class="mission-title">Learning to Fly</h2>
+              <p class="mission-info">Finish the Flying School lessons.</p>
+              <h2 class="mission-who">Verdant Meadows Airstrip</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">N.O.E.</h2>
+              <p class="mission-info">
+                Deliver the package to Angel Pine using a Rustler through a
+                Nap-of-the-Earth low-altitude flight.
+              </p>
+              <h2 class="mission-who">Verdant Meadows Airstrip</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Stowaway</h2>
+              <p class="mission-info">
+                Use a bike to catch and board the Andromada cargo and plant a
+                satchel charge aboard it. Use a stolen parachute from one of the
+                agents and escape from the back of the plane.
+              </p>
+              <h2 class="mission-who">Verdant Meadows Airstrip</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Black Project</h2>
+              <p class="mission-info">
+                Break into Area 69 and steal a $60,000,000 Jetpack from the
+                basement of an underground lab in the base. Deliver it to The
+                Truth.
+              </p>
+              <h2 class="mission-who">Verdant Meadows Airstrip</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Green Goo</h2>
+              <p class="mission-info">
+                Use the newly-acquired jetpack to steal the jar of green goo
+                from the military train.
+              </p>
+              <h2 class="mission-who">Verdant Meadows Airstrip</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-section">
+          <h1>Las Venturas</h1>
+          <div class="cards-wrapper">
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LV_The_Four_Dragons_Casino_1"
+            >
+              <h2 class="mission-title">Fender Ketchup</h2>
+              <p class="mission-info">
+                Scare Johnny Sindacco and take him back to the casino.
+              </p>
+              <h2 class="mission-who">The Four Dragons Casino</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Explosive Situation</h2>
+              <p class="mission-info">
+                Steal four sticks of dynamite from the Hunter Quarry and avoid
+                security while escaping.
+              </p>
+              <h2 class="mission-who">The Four Dragons Casino</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">You've Had Your Chips</h2>
+              <p class="mission-info">
+                Get to the factory where Sindacco make fake coins and destroy
+                their machines.
+              </p>
+              <h2 class="mission-who">The Four Dragons Casino</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Don Peyote</h2>
+              <p class="mission-info">
+                Find and rescue Kent Paul and Maccer from the desert. Take them
+                to the Caligula's Palace casino.
+              </p>
+              <h2 class="mission-who">The Four Dragons Casino</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LV_Heist_1"
+            >
+              <h2 class="mission-title">Architectural Espionage</h2>
+              <p class="mission-info">
+                Go to the Las Venturas City Planning Department and photograph
+                Caligula's Palace blueprint using a camera stolen from a tourist
+                at The Strip.
+              </p>
+              <h2 class="mission-who">Heist</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Key to Her Heart</h2>
+              <p class="mission-info">
+                Follow Caligula's Palace casino croupier Millie Perkins without
+                spooking or losing her.
+              </p>
+              <h2 class="mission-who">Heist</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Dam and Blast</h2>
+              <p class="mission-info">
+                Steal a Nevada from the airport to parachute onto the Sherman
+                dam quay. Plant explosives in the generator hall of the Sherman
+                Dam and escape to the exit.
+              </p>
+              <h2 class="mission-who">Heist</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Cop Wheels</h2>
+              <p class="mission-info">
+                Steal four police bikes and load them onto the circling Packer
+                for Woozie.
+              </p>
+              <h2 class="mission-who">Heist</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Up, Up and Away!</h2>
+              <p class="mission-info">
+                Steal a Leviathan from the K.A.C.C. Military Depot Fuel Dump.
+                Control its magnet winch to grab a Securicar from a car park in
+                Rockshore East and deliver the Cargobob and the Securicar to the
+                Verdant Meadows Airstrip.
+              </p>
+              <h2 class="mission-who">Heist</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LV_Caligulas_Casino_1"
+            >
+              <h2 class="mission-title">Intensive Care</h2>
+              <p class="mission-info">
+                Rescue Johnny Sindacco from the Forelli Family and take him to
+                the meat factory in Whitewood Estates.
+              </p>
+              <h2 class="mission-who">Caligulas Casino</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">The Meat Business</h2>
+              <p class="mission-info">
+                Take Rosie to the Sindacco Abattoir, witness Johnny's death and
+                escape from the abattoir alive back to the casino while
+                defending Rosie.
+              </p>
+              <h2 class="mission-who">Caligulas Casino</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LV_Frank_Tenpenny_1"
+            >
+              <h2 class="mission-title">Misappropriation</h2>
+              <p class="mission-info">
+                Retrieve the dossier from an FBI agent at Aldea Malvada.
+              </p>
+              <h2 class="mission-who">Frank Tenpenny</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LV_The_Four_Dragons_Casino_2"
+            >
+              <h2 class="mission-title">Fish in a Barrel</h2>
+              <p class="mission-info">
+                Meet Woozie at The Four Dragons Casino to sign an ownership deal
+                with Woozie and Farlie.
+              </p>
+              <h2 class="mission-who">The Four Dragons Casino</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LV_Madd_Dogg"
+            >
+              <h2 class="mission-title">Madd Dogg</h2>
+              <p class="mission-info">
+                Save Madd Dogg from falling to death, then take him to the Ivory
+                Towers Drive-Thru Mental Clinic before he dies.
+              </p>
+              <h2 class="mission-who">Madd Dogg</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LV_Caligulas_Casino_2"
+            >
+              <h2 class="mission-title">Freefall</h2>
+              <p class="mission-info">
+                Get a Dodo from the Las Venturas International Airport, catch up
+                with the plane full of Forelli hitmen, kill them after hijacking
+                the plane and land the plane at the airport.
+              </p>
+              <h2 class="mission-who">Caligulas Casino</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LV_Frank_Tenpenny_2"
+            >
+              <h2 class="mission-title">High Noon</h2>
+              <p class="mission-info">Kill Pulaski.</p>
+              <h2 class="mission-who">Frank Tenpenny</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LV_Caligulas_Casino_3"
+            >
+              <h2 class="mission-title">Saint Mark's Bistro</h2>
+              <p class="mission-info">
+                Take a flight to Liberty City and assassinate the Forelli gang
+                members in Marco's Bistro.
+              </p>
+              <h2 class="mission-who">Caligulas Casino</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LV_Heist_2"
+            >
+              <h2 class="mission-title">Breaking the Bank at Caligula's</h2>
+              <p class="mission-info">Rob the Caligula's Palace.</p>
+              <h2 class="mission-who">Heist</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LV_The_Four_Dragons_Casino_3"
+            >
+              <h2 class="mission-title">A Home in the Hills</h2>
+              <p class="mission-info">
+                Recover Madd Dogg's Crib from Big Poppa and run him off the road
+                from his Phoenix.
+              </p>
+              <h2 class="mission-who">The Four Dragons Casino</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-section">
+          <h1>Los Santos (Finale)</h1>
+          <div class="cards-wrapper">
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LS_End_Carl_Johnson"
+            >
+              <h2 class="mission-title">Vertical Bird</h2>
+              <p class="mission-info">
+                Steal a Hydra from the LHD-069 moored in the Easter Basin Naval
+                Station and use it to destroy chasing Hydras and the spy ships
+                in Tierra Robada. Land the Hydra at the Verdant Meadows
+                Airtsrip.
+              </p>
+              <h2 class="mission-who">Carl Johnson</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Home Coming</h2>
+              <p class="mission-info">
+                Pick up Sweet from the Los Santos Police Headquarters at
+                Pershing Square in Commerce. Retake the Grove Street cul-de-sac
+                from the Ballas.
+              </p>
+              <h2 class="mission-who">Carl Johnson</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Cut Throat Business</h2>
+              <p class="mission-info">
+                Chase Loc to the Blastin' Fools Records head office using the
+                Vortex and Kart.
+              </p>
+              <h2 class="mission-who">Carl Johnson</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LS_End_Sweet"
+            >
+              <h2 class="mission-title">Beat Down on B Dup</h2>
+              <p class="mission-info">
+                Retake Glen Park to locate Dup and Barry "Big Bear" Thorne.
+              </p>
+              <h2 class="mission-who">Sweet</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Grove 4 Life</h2>
+              <p class="mission-info">
+                Retake atleast 2 of 4 hoods in Idlewood without letting Sweet
+                die.
+              </p>
+              <h2 class="mission-who">Sweet</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_LS_End_Finale"
+            >
+              <h2 class="mission-title">Riot</h2>
+              <p class="mission-info">
+                Drive Sweet to Ganton and avoid the Los Santos Riots.
+              </p>
+              <h2 class="mission-who">Finale</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Los Desperados</h2>
+              <p class="mission-info">
+                Help Cesar and the Varrios Los Aztecas retake El Corona from the
+                Los Santos Vagos.
+              </p>
+              <h2 class="mission-who">Finale</h2>
+            </div>
+
+            <div
+              class="card-missions toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">End of the Line</h2>
+              <p class="mission-info">
+                Kill Smoke for his treachery, rescue Sweet from the firetruck
+                ladder, and eliminate Los Santos Vagos gangsters and Los Santos
+                Police Department officers trying to save an escaping Tenpenny.
+              </p>
+              <h2 class="mission-who">Finale</h2>
+            </div>
+          </div>
+        </div>
+        <div class="main-section">
+          <h1>Asset Missions</h1>
+          <div class="cards-wrapper">
+            <div
+              class="card-missions-level levelDiv"
+              data-group="0"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Robois_Food_Mart"
+            >
+              <h2 class="mission-title">Roboi's Food Mart</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="4"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 4</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="1"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Hippy_Shopper"
+            >
+              <h2 class="mission-title">Hippy Shopper</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="4"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 4</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="2"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Burger_Shot"
+            >
+              <h2 class="mission-title">Burger Shot</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="4"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 4</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="3"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Trucking"
+            >
+              <h2 class="mission-title">Trucking</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="8"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 8</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="4"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Valet_Parking"
+            >
+              <h2 class="mission-title">Valet Parking</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="5"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 5</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="5"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Hunter_Quarry"
+            >
+              <h2 class="mission-title">Hunter Quarry</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="7"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 7</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-section">
+          <h1>Odd Jobs</h1>
+          <div class="cards-wrapper">
+            <div
+              class="card-missions-level levelDiv"
+              data-group="6"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Vigilante"
+            >
+              <h2 class="mission-title">Vigilante</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="12"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 12</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="7"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Paramedic"
+            >
+              <h2 class="mission-title">Paramedic</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="12"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 12</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="8"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Firefighter"
+            >
+              <h2 class="mission-title">Firefighter</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="12"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 12</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="9"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Taxi_Driver"
+            >
+              <h2 class="mission-title">Taxi Driver</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="50"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 50</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="10"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Pimping"
+            >
+              <h2 class="mission-title">Pimping</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="10"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 10</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="11"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Freight_Train"
+            >
+              <h2 class="mission-title">Freight Train</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="2"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 2</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-section">
+          <h1>Vehicle School</h1>
+          <div class="cards-wrapper-list">
+            <div
+              class="card-missions-list listDiv listGroup"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Driving_School"
+            >
+              <h2 class="mission-title">Driving School</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Driving_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'The 360' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Driving_2"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'The 180' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Driving_3"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Whip & Terminate' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Driving_4"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Pop & Control' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Driving_5"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Bum & Lap' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Driving_6"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Cone Coil' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Driving_7"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'The 90' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Driving_8"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Wheelie Weave' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Driving_9"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Spin & Go' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Driving_10"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'P.I.T. Maneuver' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Driving_11"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Alley Oop' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Driving_12"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'City Slicking' - Test
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="card-missions-list listDiv listGroup"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Flight_School"
+            >
+              <h2 class="mission-title">Flight School</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Flight_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Takeoff' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Flight_2"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Land Plane' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Flight_3"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Circle Airstrip' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Flight_4"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Circle Airstrip & Land' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Flight_5"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Helicopter Takeoff' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Flight_6"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Land Helicopter' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Flight_7"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Destroy Targets' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Flight_8"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Loop-The-Loop' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Flight_9"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Barrel Roll' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Flight_10"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Parachute Onto Target' - Test
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="card-missions-list listDiv listGroup"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Bike_School"
+            >
+              <h2 class="mission-title">Bike School</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Bike_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'The 360' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Bike_2"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'The 180' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Bike_3"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'The Wheelie' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Bike_4"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Jump & Stop' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Bike_5"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'The Stoppie' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Bike_6"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Jump & Stoppie' - Test
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="card-missions-list listDiv listGroup"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Boat_School"
+            >
+              <h2 class="mission-title">Boat School</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Boat_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Basic Seamanship' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Boat_2"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Plot a Course' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Boat_3"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Fresh Slalom' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Boat_4"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Flying Fish' - Test
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="School_Boat_5"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    'Land, Sea & Air' - Test
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main-section">
+          <h1>Stadium Events</h1>
+          <div class="cards-wrapper-wide">
+            <div
+              class="card-missions-list toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_8Track"
+            >
+              <h2 class="mission-title">8-Track</h2>
+              <p class="mission-info">Win first place.</p>
+            </div>
+            <div
+              class="card-missions-list toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_Blood_Bowl"
+            >
+              <h2 class="mission-title">Blood Bowl</h2>
+              <p class="mission-info">Score over 60 seconds.</p>
+            </div>
+            <div
+              class="card-missions-list toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_Dirt_Track"
+            >
+              <h2 class="mission-title">Dirt Track</h2>
+              <p class="mission-info">Win first place.</p>
+            </div>
+            <div
+              class="card-missions-list toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_Kickstart"
+            >
+              <h2 class="mission-title">Kickstart</h2>
+              <p class="mission-info">Score at least 26 points.</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-section">
+          <h1>Street Races</h1>
+          <div class="cards-wrapper-list">
+            <div
+              class="card-missions-list listDiv listGroupAll"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Race_Los_Santos"
+            >
+              <h2 class="mission-title">Los Santos</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Little Loop
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_2"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Backroad Wanderer
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_3"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    City Circuit
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_4"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Vinewood
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_5"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Freeway
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_6"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Into the Country
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="card-missions-list listDiv listGroupAll"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Race_San_Fierro"
+            >
+              <h2 class="mission-title">San Fierro</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_San_Fierro_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Dirtbike Danger
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_San_Fierro_2"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Bandito Country
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_San_Fierro_3"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Go-Go Karting
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_San_Fierro_4"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    San Fierro Fastlane
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_San_Fierro_5"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    San Fierro Hills
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_San_Fierro_6"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Country Endurance
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="card-missions-list listDiv listGroupAll"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Race_LVA_Freight_Depot"
+            >
+              <h2 class="mission-title">LVA Freight Depot</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input id="Race_LVA_1" class="" type="checkbox" value="" />
+                    SF to LV
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="Race_LVA_2" class="" type="checkbox" value="" />
+                    Dam Rider
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="Race_LVA_3" class="" type="checkbox" value="" />
+                    Desert Tricks
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="Race_LVA_4" class="" type="checkbox" value="" />
+                    LV Ringroad
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="card-missions-list listDiv listGroupAll"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Race_Las_Venturas_Airport"
+            >
+              <h2 class="mission-title">Las Venturas Airport</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Las_Venturas_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    World War Ace
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Las_Venturas_2"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Barnstorming
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Las_Venturas_3"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Military Service
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Las_Venturas_4"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Chopper Checkpoint
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Las_Venturas_5"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Whirly-Bird Waypoint
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Las_Venturas_6"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Heli Hell
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main-section">
+          <h1>Hidden Challenges</h1>
+          <div class="cards-wrapper-list-wide">
+            <div
+              class="card-missions-level levelDiv"
+              data-group="12"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Chiliad_Challenge"
+            >
+              <h2 class="mission-title">Chiliad Challenge</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="3"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 3</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="13"
+              data-complete="false"
+              data-counted="true"
+              id="Section_BMX_Challenge"
+            >
+              <h2 class="mission-title">BMX Challenge</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="1"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 1</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="14"
+              data-complete="false"
+              data-counted="true"
+              id="Section_NRG500_Challenge"
+            >
+              <h2 class="mission-title">NRG-500 Challenge</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="1"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>
+                Levels Completed: <span class="rangeValueClass">0 / 1</span>
+              </h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-section">
+          <h1>Import / Export</h1>
+          <div class="cards-wrapper-list-wide">
+            <div
+              class="card-missions-list listDiv listGroup"
+              data-complete="false"
+              data-counted="true"
+              id="Section_List_1"
+            >
+              <h2 class="mission-title">List #1</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input id="List_1_1" class="" type="checkbox" value="" />
+                    Patriot
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_1_2" class="" type="checkbox" value="" />
+                    Sanchez
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_1_3" class="" type="checkbox" value="" />
+                    Strech
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_1_4" class="" type="checkbox" value="" />
+                    Feltzer
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_1_5" class="" type="checkbox" value="" />
+                    Remington
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_1_6" class="" type="checkbox" value="" />
+                    Buffalo
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_1_7" class="" type="checkbox" value="" />
+                    Sentinel
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_1_8" class="" type="checkbox" value="" />
+                    Infernus
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_1_9" class="" type="checkbox" value="" />
+                    Camper
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_1_10" class="" type="checkbox" value="" />
+                    Admiral
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="card-missions-list listDiv listGroup"
+              data-complete="false"
+              data-counted="true"
+              id="Section_List_2"
+            >
+              <h2 class="mission-title">List #2</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input id="List_2_1" class="" type="checkbox" value="" />
+                    Slamvan
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_2_2" class="" type="checkbox" value="" />
+                    Blista Compact
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_2_3" class="" type="checkbox" value="" />
+                    Stafford
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_2_4" class="" type="checkbox" value="" />
+                    Sabre
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_2_5" class="" type="checkbox" value="" />
+                    FCR-900
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_2_6" class="" type="checkbox" value="" />
+                    Cheetah
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_2_7" class="" type="checkbox" value="" />
+                    Rancher
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_2_8" class="" type="checkbox" value="" />
+                    Stallion
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_2_9" class="" type="checkbox" value="" />
+                    Tanker
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_2_10" class="" type="checkbox" value="" />
+                    Comet
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="card-missions-list listDiv listGroup"
+              data-complete="false"
+              data-counted="true"
+              id="Section_List_3"
+            >
+              <h2 class="mission-title">List #3</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input id="List_3_1" class="" type="checkbox" value="" />
+                    Blade
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_3_2" class="" type="checkbox" value="" />
+                    Freeway
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_3_3" class="" type="checkbox" value="" />
+                    Mesa
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_3_4" class="" type="checkbox" value="" />
+                    ZR-350
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_3_5" class="" type="checkbox" value="" />
+                    Euros
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_3_6" class="" type="checkbox" value="" />
+                    Banshee
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_3_7" class="" type="checkbox" value="" />
+                    Super GT
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_3_8" class="" type="checkbox" value="" />
+                    Journey
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_3_9" class="" type="checkbox" value="" />
+                    Huntley
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input id="List_3_10" class="" type="checkbox" value="" />
+                    BF Injection
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main-section">
+          <h1>Shooting Range</h1>
+          <div class="cards-wrapper-wide">
+            <div
+              class="card-missions-list toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_Shooting_Range"
+            >
+              <h2 class="mission-title">Complete the Pistol Challenge</h2>
+              <p class="mission-info">Beat All 3 Rounds</p>
+            </div>
+            <div
+              class="card-missions-list toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Complete the Micro SMG Challenge</h2>
+              <p class="mission-info">Beat All 3 Rounds</p>
+            </div>
+            <div
+              class="card-missions-list toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Complete the Shotgun Challenge</h2>
+              <p class="mission-info">Beat All 3 Rounds</p>
+            </div>
+            <div
+              class="card-missions-list toggleDiv"
+              data-state="off"
+              data-counted="true"
+            >
+              <h2 class="mission-title">Complete the AK-47 Challenge</h2>
+              <p class="mission-info">Beat All 3 Rounds</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-section">
+          <h1>Gym Moves</h1>
+          <div class="cards-wrapper">
+            <div
+              class="card-missions-list toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_Gym_Los_Santos"
+            >
+              <h2 class="mission-title">Los Santos</h2>
+              <p class="mission-info">
+                Talk to the Trainer and Learn Some Boxing Moves.
+              </p>
+            </div>
+            <div
+              class="card-missions-list toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_Gym_San_Fierro"
+            >
+              <h2 class="mission-title">San Fierro</h2>
+              <p class="mission-info">
+                Talk to the Trainer and Learn Some Kung Fu Moves.
+              </p>
+            </div>
+            <div
+              class="card-missions-list toggleDiv"
+              data-state="off"
+              data-counted="true"
+              id="Section_Gym_Las_Venturas"
+            >
+              <h2 class="mission-title">Las Venturas</h2>
+              <p class="mission-info">
+                Talk to the Trainer and Learn Some Muay Thai Moves.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="main-section">
+          <h1>Safe Houses / Businesses</h1>
+          <div class="cards-wrapper-list-wide">
+            <div class="card-missions-list listGroupAll">
+              <h2 class="mission-title">Los Santos</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Willowfield
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Verdant Bluffs
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Jefferson
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Mulholland
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Verona Beach
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Santa Maria Beach
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="card-missions-list listGroupAll">
+              <h2 class="mission-title">San Fierro</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Hashbury
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Doherty
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Queens
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Chinatown
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Paradiso
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Calton Heights
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="card-missions-list listGroupAll">
+              <h2 class="mission-title">Las Venturas</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Whitewood Estates
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Prickle Pine
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Redsands West
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Pirates In Men's Pants
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    The Camel's Toe
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Rockshore West
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    The Clown's Pocket
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Old Venturas Strip
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Creek
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="card-missions-list listGroupAll">
+              <h2 class="mission-title">Badlands</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Palomino Creek
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Blueberry
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Dillimore
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Angel Pine
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Whetstone
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="card-missions-list listGroupAll">
+              <h2 class="mission-title">Desert</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    El Quebradas
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Tierra Robada
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Fort Carson
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="card-missions-list listGroupAll">
+              <h2 class="mission-title">Businesses</h2>
+              <ul>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Zero's RC Shop
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Wang Cars
+                  </label>
+                </li>
+                <li>
+                  <label class="form-control">
+                    <input
+                      id="Race_Los_Santos_1"
+                      class=""
+                      type="checkbox"
+                      value=""
+                    />
+                    Verdant Meadows Airfield
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main-section">
+          <h1>Collectables</h1>
+          <div class="cards-wrapper-list">
+            <div
+              class="card-missions-level levelDiv"
+              data-group="15"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Collectables_Oysters"
+            >
+              <h2 class="mission-title">Oysters</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="50"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>Collected: <span class="rangeValueClass">0 / 50</span></h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="16"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Collectables_Gang_Tags"
+            >
+              <h2 class="mission-title">Gang Tags</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>Sprayed: <span class="rangeValueClass">0 / 100</span></h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="17"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Collectables_Snapshots"
+            >
+              <h2 class="mission-title">Snapshots</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="50"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>Taken: <span class="rangeValueClass">0 / 50</span></h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card-missions-level levelDiv"
+              data-group="18"
+              data-complete="false"
+              data-counted="true"
+              id="Section_Collectables_Horeseshoes"
+            >
+              <h2 class="mission-title">Horseshoes</h2>
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="0"
+                  max="50"
+                  value="0"
+                  class="slider myRangeClass"
+                />
+              </div>
+              <h2>Collected: <span class="rangeValueClass">0 / 50</span></h2>
+              <div class="button-container">
+                <button class="btnSubtractClass">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <button class="btnAddClass">
+                  <i class="fa-solid fa-caret-up"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      <h1>SA:PT - by oulys</h1>
+      <div class="logo_codeberg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="Codeberg"
+          role="img"
+          viewBox="0 0 512 512"
+        >
+          <defs>
+            <linearGradient
+              id="A"
+              x1="259.804"
+              x2="383.132"
+              y1="161.4"
+              y2="407.835"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="var(--card-on)" stop-opacity="0" />
+              <stop
+                offset=".5"
+                stop-color="var(--card-on)"
+                stop-opacity="0.30000001"
+              />
+              <stop
+                offset="1"
+                stop-color="var(--card-on)"
+                stop-opacity="0.30000001"
+              />
+            </linearGradient>
+          </defs>
+          <path
+            fill="url(#A)"
+            d="M259.804 161.4c-.44 0-1.1 0-1.32.44l-.44 1.1L332.04 440.21a192.039 192.039 0 0 0 86.77-74.437L261.125 162.06a1.762 1.762 0 0 0-1.321-.661z"
+            opacity=".5"
+            paint-order="stroke markers fill"
+          />
+          <path
+            fill="var(--card-on)"
+            d="M255.3 71.8a192 192 0 0 0-162 294l160.1-207c.5-.6 1.5-1 2.6-1s2 .4 2.6 1l160 207a192 192 0 0 0 29.4-102c0-106-86-192-192-192a192 192 0 0 0-.7 0z"
+            paint-order="stroke markers fill"
+          />
+        </svg>
+      </div>
+      <div class="footer-info">
+        <p>SA:PT is <span id="footerFOSS">open source!</span></p>
+        <p>
+          ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          oulys
+        </p>
+      </div>
+      <div class="footer-note">
+        <p>
+          Made for the Community with
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="var(--card-on)"
+            width="16px"
+            height="16px"
+            viewBox="0 0 24 18"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.36129 3.46995C6.03579 3.16081 6.76287 3 7.50002 3C8.23718 3 8.96425 3.16081 9.63875 3.46995C10.3129 3.77893 10.9185 4.22861 11.4239 4.78788C11.7322 5.12902 12.2678 5.12902 12.5761 4.78788C13.5979 3.65726 15.0068 3.00001 16.5 3.00001C17.9932 3.00001 19.4021 3.65726 20.4239 4.78788C21.4427 5.91515 22 7.42425 22 8.9792C22 10.5342 21.4427 12.0433 20.4239 13.1705L14.2257 20.0287C13.0346 21.3467 10.9654 21.3467 9.77429 20.0287L3.57613 13.1705C3.07086 12.6115 2.67474 11.9531 2.40602 11.2353C2.13731 10.5175 2 9.75113 2 8.9792C2 8.20728 2.13731 7.44094 2.40602 6.72315C2.67474 6.00531 3.07086 5.34694 3.57613 4.78788C4.08157 4.22861 4.68716 3.77893 5.36129 3.46995Z"
+            />
+          </svg>
+          by Members of the Community
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
