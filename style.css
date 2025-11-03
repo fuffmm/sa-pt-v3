@@ -122,7 +122,7 @@ body {
   .logo_codeberg {
     width: 32px;
     aspect-ratio: 1/1;
-    margin: -4px;
+    margin: 0;
     svg {
       cursor: pointer;
     }
@@ -424,3 +424,4 @@ div[id^="Section_"] {
 .themes-wrapper + .themes-wrapper {
   margin-top: 1em;
 }
+
